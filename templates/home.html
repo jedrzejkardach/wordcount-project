@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Screen</title>
+</head>
+<body>
+<h1>Hello!</h1>
+<h1>{{ bird }}</h1>
+<h2>Bye</h2>
+<a href="{% url 'about_page' %}">Click to learn about this project</a>
+<form action="{% url 'wordscounted' %}">
+    <h3>Enter text to count the words</h3>
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!">
+</form>
+</body>
+</html>
